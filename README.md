@@ -29,3 +29,7 @@ Additional operations on results:
 - View multiple results with pagination
 
 ---
+![Screenshot 2025-01-24 181912](https://github.com/user-attachments/assets/deee7ec5-1f3a-4323-93b0-5354702ed79a)
+![Screenshot 2025-01-24 182012](https://github.com/user-attachments/assets/08643273-bb9d-43b3-b648-83022a957b8e)
+![Screenshot 2025-01-24 182042](https://github.com/user-attachments/assets/44614fe7-c51a-4e55-8bb6-93e11acbc499)
+![Screenshot 2025-01-24 182108](https://github.com/user-attachments/assets/e9cbc927-930c-4e6f-bdcc-170542ddcf91)
