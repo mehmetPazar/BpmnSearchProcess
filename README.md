@@ -1,5 +1,4 @@
 # BPMN Process Search  
-_Find process references in your BPMN files_
 
 ---
 
