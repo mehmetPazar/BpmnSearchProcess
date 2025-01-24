@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# BPMN Process Search  
+_Find process references in your BPMN files_
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## How to Use?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1️⃣ Search Type Selection
+There are two different search types:
+- **Search by Process ID**: Searches for a Process ID referenced in other processes.
+- **Search by Text**: Searches for text in Script, Call Activity, and Condition Expression contents.
 
-## Expanding the ESLint configuration
+### 2️⃣ File Selection
+Click the **"Select Files"** button to choose the folder containing your BPMN files.  
+All `.bpmn` and `.xml` files in the selected folder will be automatically scanned.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 3️⃣ Search Results
+The search results show the following information:
+- File path and name
+- Process name
+- Found elements and their contents
+- Highlighted elements on the BPMN diagram
 
-- Configure the top-level `parserOptions` property like this:
+### 4️⃣ Filtering and Viewing
+Additional operations on results:
+- Filter by folder, file, or process name
+- Zoom in/out on the diagram
+- Drag the diagram with mouse
+- View multiple results with pagination
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
